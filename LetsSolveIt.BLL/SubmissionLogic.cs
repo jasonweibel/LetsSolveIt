@@ -41,7 +41,7 @@ namespace LetsSolveIt.BLL
                 exists.Category = submission.Category;
                 exists.InvitedUsers = submission.InvitedUsers;
                 exists.LastModifiedDate = DateTime.Now;
-                exists.Text = submission.Text;
+                exists.Suggestion = submission.Suggestion;
                 exists.User = submission.User;
                 exists.Votes = submission.Votes;
             }

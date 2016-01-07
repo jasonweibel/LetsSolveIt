@@ -22,6 +22,8 @@ namespace LetsSolveIt.DomainModel
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }
 
+        public int MaxNumberOfUserVotes { get; set; }
+
         // active or inactive
         public bool State { get; set; }
         // if link to users is null then everyone can see it.

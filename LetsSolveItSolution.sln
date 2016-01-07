@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetsSolveIt.BLL", "LetsSolv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetsSolveIt.WebService", "LetsSolveIt.WebService\LetsSolveIt.WebService.csproj", "{42460054-7427-4321-8485-CCAF6E0B9150}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetsSolveIt.Website", "LetsSolveIt.Website\LetsSolveIt.Website.csproj", "{9CF68A1A-B9D6-4757-B528-F38DC66C4384}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{42460054-7427-4321-8485-CCAF6E0B9150}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42460054-7427-4321-8485-CCAF6E0B9150}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42460054-7427-4321-8485-CCAF6E0B9150}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CF68A1A-B9D6-4757-B528-F38DC66C4384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CF68A1A-B9D6-4757-B528-F38DC66C4384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CF68A1A-B9D6-4757-B528-F38DC66C4384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CF68A1A-B9D6-4757-B528-F38DC66C4384}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -34,7 +34,7 @@ namespace LetsSolveIt.BLL
         {
             var exists = _entities.Campaigns.FirstOrDefault(x => x.Id == campaign.Id);
 
-            if (exists != null)
+            if (exists == null)
             {
                 campaign.CreatedDate = DateTime.Now;
                 campaign.LastModifiedDate = DateTime.Now;

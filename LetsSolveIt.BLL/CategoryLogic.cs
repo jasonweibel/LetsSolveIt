@@ -34,7 +34,7 @@ namespace LetsSolveIt.BLL
         {
             var exists = _entities.Categories.FirstOrDefault(x => x.Id == category.Id);
 
-            if (exists != null)
+            if (exists == null)
             {
                 category.State = true;
                 _entities.Categories.Add(category);

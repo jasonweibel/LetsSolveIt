@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace Ideas.WebService.Controllers
+namespace LetsSolveIt.WebService.Controllers
 {
     public class HomeController : Controller
     {

@@ -29,7 +29,7 @@ namespace LetsSolveIt.BLL
         {
             var exists = _entities.Comments.FirstOrDefault(x => x.Id == comments.Id);
 
-            if (exists != null)
+            if (exists == null)
             {
                 comments.CreatedDate = DateTime.Now;
                 comments.State = true;

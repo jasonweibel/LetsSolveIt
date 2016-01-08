@@ -4,7 +4,7 @@ using Ideas.DAL;
 using LetsSolveIt.BLL;
 using LetsSolveIt.DomainModel;
 
-namespace Ideas.WebService.Controllers
+namespace LetsSolveIt.WebService.Controllers
 {
     [Authorize]
     public class CampaignController : ApiController

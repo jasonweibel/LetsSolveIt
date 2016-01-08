@@ -54,6 +54,8 @@
     <Compile Include="CommentLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SubmissionLogic.cs" />
+    <Compile Include="UserLogic.cs" />
+    <Compile Include="UserVoteLogic.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LetsSolveIt.DAL\LetsSolveIt.DAL.csproj">

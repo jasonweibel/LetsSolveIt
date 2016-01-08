@@ -6,28 +6,27 @@ using LetsSolveIt.DomainModel;
 
 namespace LetsSolveIt.WebService.Controllers
 {
-    [Authorize]
-    public class SubmissionController : ApiController
+    public class VoteController : ApiController
     {
         private static readonly LetsSolveItContext _context = new LetsSolveItContext();
-        private readonly SubmissionLogic _bll = new SubmissionLogic(_context);
+        private readonly UserVoteLogic _bll = new UserVoteLogic(_context);
 
-        public List<Submissions> Get()
+        public List<UserVotes> Get()
         {
             return _bll.Get();
         }
 
-        public Submissions Get(int id)
+        public UserVotes Get(int id)
         {
             return _bll.Get(id);
         }
 
-        public void Post([FromBody]Submissions value)
+        public void Post([FromBody]UserVotes value)
         {
             _bll.Save(value);
         }
 
-        public void Put(int id, [FromBody]Submissions value)
+        public void Put(int id, [FromBody]UserVotes value)
         {
             _bll.Save(value);
         }

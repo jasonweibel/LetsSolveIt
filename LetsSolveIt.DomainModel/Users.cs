@@ -1,4 +1,6 @@
-﻿namespace LetsSolveIt.DomainModel
+﻿using System;
+
+namespace LetsSolveIt.DomainModel
 {
     public class Users
     {
@@ -6,6 +8,6 @@
         public string UserName { get; set; }
         // active or inactive
         public bool State { get; set; }
-
+        public DateTime CreatedDate { get; set; }
     }
 }

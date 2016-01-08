@@ -29,7 +29,7 @@ namespace LetsSolveIt.BLL
         {
             var exists = _entities.Submissions.FirstOrDefault(x => x.Id == submission.Id);
 
-            if (exists != null)
+            if (exists == null)
             {
                 submission.CreatedDate = DateTime.Now;
                 submission.State = true;

@@ -22,6 +22,25 @@ namespace LetsSolveIt.WebService.Controllers
             return _bll.Get(id);
         }
 
+        public Campaigns Get(string name)
+        {
+            return _bll.Get(name);
+        }
+
+        [Route("{id}/submissions")]
+        [HttpGet]
+        public List<Submissions> GetSubmissionsForCampaign([FromUri] int id)
+        {
+            return _bll.GetSubmissionsForCampaign(id);
+        }
+
+        [Route("{id}/submissions/ids")]
+        [HttpGet]
+        public List<int> GetSubmissionIdsForCampaign([FromUri] int id)
+        {
+            return _bll.GetSubmissionIdsForCampaign(id);
+        }
+
         public void Post([FromBody]Campaigns value)
         {
             _bll.Save(value);

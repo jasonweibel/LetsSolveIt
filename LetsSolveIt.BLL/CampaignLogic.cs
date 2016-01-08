@@ -30,6 +30,16 @@ namespace LetsSolveIt.BLL
             return _entities.Campaigns.FirstOrDefault(x => x.Name == name);
         }
 
+        public List<Submissions> GetSubmissionsForCampaign(int id)
+        {
+            return _entities.Submissions.Where(x => x.Campaign.Id == id).ToList();
+        }
+
+        public List<int> GetSubmissionIdsForCampaign(int id)
+        {
+            return GetSubmissionsForCampaign(id).Select(x => x.Id).Distinct().ToList();
+        }
+
         public void Save(Campaigns campaign)
         {
             var exists = _entities.Campaigns.FirstOrDefault(x => x.Id == campaign.Id);

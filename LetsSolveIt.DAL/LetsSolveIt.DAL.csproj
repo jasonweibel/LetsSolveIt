@@ -65,6 +65,10 @@
     <Compile Include="Migrations\201601060336498_AddStateFlagWhereMissed.Designer.cs">
       <DependentUpon>201601060336498_AddStateFlagWhereMissed.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201601081928244_AddUserVotes.cs" />
+    <Compile Include="Migrations\201601081928244_AddUserVotes.Designer.cs">
+      <DependentUpon>201601081928244_AddUserVotes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -84,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201601060336498_AddStateFlagWhereMissed.resx">
       <DependentUpon>201601060336498_AddStateFlagWhereMissed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601081928244_AddUserVotes.resx">
+      <DependentUpon>201601081928244_AddUserVotes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

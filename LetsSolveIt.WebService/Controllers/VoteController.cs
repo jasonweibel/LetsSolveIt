@@ -23,12 +23,12 @@ namespace LetsSolveIt.WebService.Controllers
 
         public void Post([FromBody]UserVotes value)
         {
-            _bll.Save(value);
+            _bll.Add(value);
         }
 
         public void Put(int id, [FromBody]UserVotes value)
         {
-            _bll.Save(value);
+            _bll.Add(value);
         }
 
         public void Delete(int id)

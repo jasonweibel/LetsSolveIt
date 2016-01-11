@@ -1,3 +1,4 @@
-﻿module app {
-	angular.module("fitnessApp", []);
+﻿module lsi {
+	angular.module("lsi",
+		["lsiServices"]);
 }

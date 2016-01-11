@@ -11,16 +11,27 @@
 	<link href="css/tablet.css" rel="stylesheet" />
 	<link href="css/desktop.css" rel="stylesheet" />
 
-	<!--Application Script-->
-	<!--<script src="scripts/angular.min.js"></script>-->
-	<script src="scripts/angular.js"></script>
-	<script src="app.js"></script>
+	<!--Library Scripts-->
+	<script src="lib/angular.js"></script>
+    <script src="lib/angular-resource.js"></script>
+
+    <!--Application Script-->
+    <script src="app.js"></script>
+
+    <!--Models-->
+    <script src="models/ICampaign.js"></script>
+    <script src="models/ICategory.js"></script>
+    <script src="models/ISubmission.js"></script>
+
+    <!--Services-->
+    <script src="services/common.js"></script>
+    <script src="services/repositoryAPIService.js"></script>
 
 	<!--Controllers-->
-	<script src="calendar/calendarCtrl.js"></script>
+    <script src="activeCampaigns/activeCampaignsControler.js"></script>
 </head>
 
-<body ng-app="fitnessApp">
+<body ng-app="lsi">
 	<div id="headerWrapper">
 		<header class="clearfix">
 			<hgroup>
@@ -44,12 +55,12 @@
 	</div> <!-- end of the navigation wrapper -->
 
 	<div id="contentWrapper"
-		 ng-include="'calendar/calendar.html'">
+		 ng-include="'activeCampaigns/activeCampaigns.html'">
 	</div> <!-- end of the content wrapper -->
 
 	<div id="footerWrapper">
 		<footer>
-			<p> Copyright &copy; 2015 &bull; Two Solve-A-Thon Guys &bull; Iowa</p>
+			<p> Copyright &copy; 2016 &bull; Three Solve-A-Thon Guys &bull; Iowa</p>
 		</footer>
 	</div> <!-- end of the footer wrapper -->
 </body>

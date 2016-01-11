@@ -1,0 +1,20 @@
+﻿
+<div ng-controller="ActiveCampaingsController as vm">
+    <div id="search">
+        <!--<input placeholder="Enter species" type="text" ng-model="mysearch" />-->
+        <button ng-click="vm.GetAllCampaigns()">Click me to get All campaigns</button>
+    </div>
+
+    <div>
+        <p>
+            {{vm.Message}}
+        </p>
+    </div>
+
+    <div>
+        <p>
+            {{vm.Campaings}}
+        </p>
+    </div>
+</div>
+

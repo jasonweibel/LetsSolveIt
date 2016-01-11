@@ -21,11 +21,14 @@
 			var resource = this._repositoryAPIService.getAllCampaigns();
 
 			this.Message = "Fetching...";
-
-			resource.get(
+			resource.query(
+			//resource.get(
 				(value, httpResponce) => {
 					this.Campaings = value.result;
-					this.Message = "Success";
+
+					var n: Number = this.Campaings == null ? 0 : this.Campaings.length;
+
+					this.Message = "Success: returned " + n.toString() + " elements";
 				},
 
 				(error) => {

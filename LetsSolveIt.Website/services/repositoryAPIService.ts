@@ -22,6 +22,7 @@
 
 		getAllCampaigns(): ng.resource.IResourceClass<IModelCampaign> {
 			var url: string = "api/Campaign";
+			url = "http://localhost:33625/api/Campaign";
 
 			return this.$resource(url);
 		}

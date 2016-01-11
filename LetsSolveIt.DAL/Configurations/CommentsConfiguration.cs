@@ -7,7 +7,7 @@ namespace LetsSolveIt.DAL.Configurations
     {
         public CommentsConfiguration()
         {
-            Property(p => p.UserName).HasMaxLength(250);
+            //Property(p => p.UserName).HasMaxLength(250);
         }
     }
 }

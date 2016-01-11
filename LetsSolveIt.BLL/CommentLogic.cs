@@ -38,7 +38,7 @@ namespace LetsSolveIt.BLL
             else
             {
                 exists.CommentText = comments.CommentText;
-                exists.UserName = comments.UserName;
+                exists.User = comments.User;
                 exists.Votes = comments.Votes;
             }
             _entities.SaveChanges();

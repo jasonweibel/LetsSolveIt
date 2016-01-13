@@ -27,12 +27,12 @@ namespace LetsSolveIt.WebService.Controllers
             return _bll.Get(name);
         }
 
-        [Route("api/Campaign/{id}/submission")]
-        [HttpGet]
-        public List<Submissions> GetSubmissionsForCampaign([FromUri] int id)
-        {
-            return _bll.GetSubmissionsForCampaign(id);
-        }
+        //[Route("api/Campaign/{id}/submission")]
+        //[HttpGet]
+        //public List<Submissions> GetSubmissionsForCampaign([FromUri] int id)
+        //{
+        //    return _bll.GetSubmissionsForCampaign(id);
+        //}
 
         [Route("api/Campaign/{id}/submission/id")]
         [HttpGet]

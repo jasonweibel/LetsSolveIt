@@ -22,6 +22,13 @@ namespace LetsSolveIt.WebService.Controllers
             return _bll.Get(id);
         }
 
+        [Route("api/Comment/submission/{id}")]
+        public List<Comments> GetForSubmission([FromUri] int submissionId)
+        {
+            return _bll.GetForSubmission(submissionId);
+        }
+
+
         public void Post([FromBody]Comments value)
         {
             _bll.Save(value);

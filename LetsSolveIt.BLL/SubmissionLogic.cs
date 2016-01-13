@@ -20,9 +20,14 @@ namespace LetsSolveIt.BLL
             return _entities.Submissions.ToList();
         }
 
-        public Submissions Get(int Id)
+        public List<Submissions> GetForCampaign(int campaignId)
         {
-            return _entities.Submissions.FirstOrDefault(x => x.Id == Id);
+            return _entities.Submissions.Where( x => x.Campaign.Id == campaignId).ToList();
+        }
+
+        public Submissions Get(int id)
+        {
+            return _entities.Submissions.FirstOrDefault(x => x.Id == id);
         }
 
         public void Save(Submissions submission)
@@ -48,9 +53,9 @@ namespace LetsSolveIt.BLL
             _entities.SaveChanges();
         }
 
-        public void Delete(int Id)
+        public void Delete(int id)
         {
-            var submission = _entities.Submissions.FirstOrDefault(x => x.Id == Id);
+            var submission = _entities.Submissions.FirstOrDefault(x => x.Id == id);
 
             if (submission == null)
             {

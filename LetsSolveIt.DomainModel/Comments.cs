@@ -6,6 +6,7 @@ namespace LetsSolveIt.DomainModel
     {
         public int Id { get; set; }
         public Users User { get; set; }
+        public Submissions Submission { get; set; }
         public string CommentText { get; set; }
 
         public int Votes { get; set; }

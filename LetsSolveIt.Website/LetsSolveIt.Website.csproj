@@ -68,7 +68,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="activeCampaigns\activeCampaigns.html" />
+    <Content Include="app\activeCampaigns\activeCampaigns.html" />
     <Content Include="css\desktop.css" />
     <Content Include="css\phone-default.css" />
     <Content Include="css\reset.css" />
@@ -100,7 +100,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="activeCampaigns\activeCampaignsControler.ts" />
+    <TypeScriptCompile Include="app\activeCampaigns\activeCampaignsControler.ts" />
     <TypeScriptCompile Include="app.ts" />
     <TypeScriptCompile Include="models\ICampaign.ts" />
     <TypeScriptCompile Include="models\ICategory.ts" />
@@ -119,7 +119,9 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="app\categories\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

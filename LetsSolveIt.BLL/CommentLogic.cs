@@ -20,9 +20,14 @@ namespace LetsSolveIt.BLL
             return _entities.Comments.ToList();
         }
 
-        public Comments Get(int Id)
+        public Comments Get(int id)
         {
-            return _entities.Comments.FirstOrDefault(x => x.Id == Id);
+            return _entities.Comments.FirstOrDefault(x => x.Id == id);
+        }
+
+        public List<Comments> GetForSubmission(int submissionId)
+        {
+            return _entities.Comments.Where(x => x.Submission.Id == submissionId).ToList();
         }
 
         public void Save(Comments comments)

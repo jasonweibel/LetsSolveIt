@@ -7,7 +7,7 @@ namespace LetsSolveIt.DomainModel
     {
         public int Id { get; set; }
 
-        public string UserName { get; set; }
+        public virtual Users User { get; set; }
 
         public string Name { get; set; }
 

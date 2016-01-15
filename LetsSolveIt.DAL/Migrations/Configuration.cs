@@ -27,7 +27,7 @@ namespace LetsSolveIt.DAL.Migrations
 
         private static void SeedCategory(ILetsSolveItContext context)
         {
-            context.Categories.AddOrUpdate(x => x.Id,
+            context.Categories.AddOrUpdate(x => x.Category,
                 new Categories {Id = 1,  Category = "SampleCategory1", State = true },
                 new Categories {Id = 2,  Category = "SampleCategory2", State = true },
                 new Categories {Id = 3,  Category = "SampleCategory3", State = true },
@@ -41,7 +41,7 @@ namespace LetsSolveIt.DAL.Migrations
             // var category = new Categories() { Id = 1, Category = "SampleCategory1", State = true };
             var category = context.Categories.FirstOrDefault();
 
-            context.Campaigns.AddOrUpdate(x => x.Id,
+            context.Campaigns.AddOrUpdate(x => x.Name,
                 new Campaigns { Id = 1, State = true, Name = "SampleCampaign1", CreatedDate = DateTime.Now, Category = category, LastModifiedDate = DateTime.Now},
                 new Campaigns { Id = 2, State = true, Name = "SampleCampaign2", CreatedDate = DateTime.Now, Category = category, LastModifiedDate = DateTime.Now },
                 new Campaigns { Id = 3, State = true, Name = "SampleCampaign3", CreatedDate = DateTime.Now, Category = category, LastModifiedDate = DateTime.Now }
@@ -56,7 +56,7 @@ namespace LetsSolveIt.DAL.Migrations
             var category = context.Categories.FirstOrDefault();
             var campaign = context.Campaigns.FirstOrDefault();
 
-            context.Submissions.AddOrUpdate(x => x.Id,
+            context.Submissions.AddOrUpdate(x => x.Suggestion,
                 new Submissions() { Id = 1, State = true, Suggestion = "SampleSuggestion1", Category = category, Campaign = campaign, LastModifiedDate = DateTime.Now },
                 new Submissions() { Id = 2, State = true, Suggestion = "SampleSuggestion2", Category = category, Campaign = campaign, LastModifiedDate = DateTime.Now },
                 new Submissions() { Id = 3, State = true, Suggestion = "SampleSuggestion3", Category = category, Campaign = campaign, LastModifiedDate = DateTime.Now },
@@ -83,7 +83,7 @@ namespace LetsSolveIt.DAL.Migrations
             var campaign = context.Campaigns.FirstOrDefault();
             var submission = context.Submissions.FirstOrDefault();
 
-            context.Comments.AddOrUpdate(x => x.Id,
+            context.Comments.AddOrUpdate(x => x.CommentText,
                 new Comments() { Id = 1, State = true, CommentText = "SampleComment1", CreatedDate = DateTime.Now, Submission = submission },
                 new Comments() { Id = 2, State = true, CommentText = "SampleComment2", CreatedDate = DateTime.Now, Submission = submission },
                 new Comments() { Id = 3, State = true, CommentText = "SampleComment3", CreatedDate = DateTime.Now, Submission = submission },

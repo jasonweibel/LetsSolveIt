@@ -200,3 +200,5 @@ FakesAssemblies/
 /LetsSolveIt.Website/app.js.map
 /LetsSolveIt.Website/app/activeCampaigns/activeCampaignsControler.js
 /LetsSolveIt.Website/app/activeCampaigns/activeCampaignsControler.js.map
+/LetsSolveIt.Website/services/*.js
+/LetsSolveIt.Website/services/*.map

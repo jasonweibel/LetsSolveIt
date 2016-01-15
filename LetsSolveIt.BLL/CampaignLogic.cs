@@ -61,7 +61,7 @@ namespace LetsSolveIt.BLL
                 exists.LastModifiedDate = DateTime.Now;
                 exists.StartDate = campaign.StartDate;
                 exists.State = campaign.State;
-                exists.UserName = campaign.UserName;
+                exists.User = campaign.User;
             }
             _entities.SaveChanges();
         }

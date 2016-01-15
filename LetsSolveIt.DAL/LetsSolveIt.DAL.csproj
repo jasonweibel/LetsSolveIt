@@ -77,6 +77,10 @@
     <Compile Include="Migrations\201601132151268_UpdateCommentWithLinkToSubmission.Designer.cs">
       <DependentUpon>201601132151268_UpdateCommentWithLinkToSubmission.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201601151852301_UpdateCampaignToUserLink.cs" />
+    <Compile Include="Migrations\201601151852301_UpdateCampaignToUserLink.Designer.cs">
+      <DependentUpon>201601151852301_UpdateCampaignToUserLink.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -105,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201601132151268_UpdateCommentWithLinkToSubmission.resx">
       <DependentUpon>201601132151268_UpdateCommentWithLinkToSubmission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601151852301_UpdateCampaignToUserLink.resx">
+      <DependentUpon>201601151852301_UpdateCampaignToUserLink.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

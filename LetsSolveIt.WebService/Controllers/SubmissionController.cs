@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
-using Ideas.DAL;
 using LetsSolveIt.BLL;
+using LetsSolveIt.DAL;
 using LetsSolveIt.DomainModel;
 
 namespace LetsSolveIt.WebService.Controllers

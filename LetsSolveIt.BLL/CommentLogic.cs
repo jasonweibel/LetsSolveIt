@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Ideas.DAL;
+using LetsSolveIt.DAL;
 using LetsSolveIt.DomainModel;
 
 namespace LetsSolveIt.BLL

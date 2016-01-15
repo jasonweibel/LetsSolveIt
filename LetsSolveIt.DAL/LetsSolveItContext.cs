@@ -3,7 +3,7 @@ using System.Data.Entity.Validation;
 using System.Linq;
 using LetsSolveIt.DomainModel;
 
-namespace Ideas.DAL
+namespace LetsSolveIt.DAL
 {
 
     public class LetsSolveItContext : DbContext, ILetsSolveItContext

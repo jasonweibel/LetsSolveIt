@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity;
 using LetsSolveIt.DomainModel;
 
-namespace Ideas.DAL
+namespace LetsSolveIt.DAL
 {
     public interface ILetsSolveItContext
     {

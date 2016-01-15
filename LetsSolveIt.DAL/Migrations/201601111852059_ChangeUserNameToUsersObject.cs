@@ -1,8 +1,7 @@
-namespace Ideas.DAL.Migrations
+using System.Data.Entity.Migrations;
+
+namespace LetsSolveIt.DAL.Migrations
 {
-    using System;
-    using System.Data.Entity.Migrations;
-    
     public partial class ChangeUserNameToUsersObject : DbMigration
     {
         public override void Up()

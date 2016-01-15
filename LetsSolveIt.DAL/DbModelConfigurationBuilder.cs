@@ -4,7 +4,7 @@ using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Reflection;
 
-namespace Ideas.DAL
+namespace LetsSolveIt.DAL
 {
     public class DbModelConfigurationBuilder
     {

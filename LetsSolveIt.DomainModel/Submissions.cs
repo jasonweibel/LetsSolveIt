@@ -3,15 +3,15 @@ using System.Collections.Generic;
 
 namespace LetsSolveIt.DomainModel
 {
-    public class Submissions
+    public class Submissions: IStandardEntityElements
     {
         public int Id { get; set; }
 
-        public Campaigns Campaign { get; set; }
+        public virtual Campaigns Campaign { get; set; }
 
-        public Users User { get; set; }
+        public virtual Users User { get; set; }
 
-        public Categories Category { get; set; }
+        public virtual Categories Category { get; set; }
 
         public string Suggestion { get; set; }
 

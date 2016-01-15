@@ -43,6 +43,7 @@
     <Compile Include="CampaignResources.cs" />
     <Compile Include="Campaigns.cs" />
     <Compile Include="Categories.cs" />
+    <Compile Include="IStandardEntityElements.cs" />
     <Compile Include="Resources.cs" />
     <Compile Include="UserRoles.cs" />
     <Compile Include="Users.cs" />

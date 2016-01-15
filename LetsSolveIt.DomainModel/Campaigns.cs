@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace LetsSolveIt.DomainModel
 {
-    public class Campaigns
+    public class Campaigns: IStandardEntityElements
     {
         public int Id { get; set; }
 
@@ -13,7 +13,7 @@ namespace LetsSolveIt.DomainModel
 
         public string Description { get; set; }
 
-        public Categories Category { get; set; }
+        public virtual Categories Category { get; set; }
 
         public DateTime CreatedDate { get; set; }
         public DateTime LastModifiedDate { get; set; }
